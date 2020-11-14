@@ -1,0 +1,92 @@
+/* Your styles should be mobile-first and responsive */
+
+html {
+  background-color: lightblue; 
+  background-image: url(images/background.jpg); 
+  background-image: 100%; 
+  background-repeat: no-repeat; 
+  background-position-x: 0px;
+  background-position-y: 60px;  
+
+  font-family: Arial, Helvetica, sans-serif; 
+  /*opacity: 0.5;*/
+}
+
+body {
+  margin-top: 25%; 
+}
+
+h1 {
+  background: white; 
+  margin: 20px;
+  text-align: center; 
+  border-radius: 10px; 
+  box-shadow: 10px 5px 5px black;
+  padding: 10px; 
+}
+
+form {
+  background: white; 
+  margin: 20px; 
+  padding: 10px; 
+  border-radius: 10px; 
+  box-shadow: 10px 5px 5px black;
+}
+
+.question {
+  background: white; 
+  margin: 20px;
+  text-align: center; 
+  border-radius: 10px; 
+  box-shadow: 10px 5px 5px black;
+  padding: 10px; 
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    max-width: 640px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    margin-left: 25%; 
+    margin-right: 25%;
+    position: fixed;  
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    margin-top: 10%; 
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  html {
+    background-position-x: 120px;
+    background-position-y: 60px;
+  }
+
+  body {
+    margin-left: 31%; 
+  }
+}
+
+
+
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
